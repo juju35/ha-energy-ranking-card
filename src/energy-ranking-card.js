@@ -321,7 +321,7 @@ class EnergyRankingCard extends RcCard {
           <div class="badge"><ha-icon icon="mdi:flash"></ha-icon></div>
           <div class="tt"><div class="trow"><div class="title">${rcEsc(m.name)}</div>${chip}</div>${sub}</div>
         </div>
-        <svg class="room" viewBox="0 0 ${mini ? 90 : 170} 80" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">${scene}</svg>
+        <svg class="room" viewBox="0 0 ${mini ? 96 : 180} 80" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">${scene}</svg>
         <div class="ground"></div>
       </div>`;
   }
@@ -463,7 +463,7 @@ class EnergyRankingCard extends RcCard {
        10 px ground strip at the bottom. The badge's icon is in the status colour, by day and night. */
     .banner { position: relative; display: flex; height: 90px; margin: -12px -12px 0; overflow: hidden;
               background: linear-gradient(180deg, #fff6e6 0%, #fbe8c8 100%);
-              --bt: #0d2a45; --bs: #3b5b78; --ic: color-mix(in srgb, var(--c) 85%, #10283f); --sw: min(170px, 46%); }
+              --bt: #0d2a45; --bs: #3b5b78; --ic: color-mix(in srgb, var(--c) 85%, #10283f); --sw: min(180px, 46%); }
     .banner.night { background: linear-gradient(180deg, #241d14 0%, #2e251a 100%); --bt: #fff; --bs: rgba(255,255,255,.78); --ic: color-mix(in srgb, var(--c) 72%, #fff); }
     .banner .head { position: relative; z-index: 1; flex: 1; min-width: 0; height: 80px; box-sizing: border-box;
                     padding: 0 calc(var(--sw) + 4px) 0 14px; flex-wrap: nowrap; }
@@ -511,9 +511,9 @@ class EnergyRankingCard extends RcCard {
     }
     /* The mini card: the banner alone. */
     ha-card.bn { padding: 0; }
-    ha-card.bn > .banner { margin: 0; --sw: 80px; }
+    ha-card.bn > .banner { margin: 0; --sw: 86px; }
     /* Narrower cards: the bars are drawn smaller (75 %, 62 %, then 50 % of their height, their left part cropped). */
-    @container (max-width: 420px) { .banner { --sw: 130px; --sk: .75; } }
+    @container (max-width: 420px) { .banner { --sw: 136px; --sk: .75; } }
     @container (max-width: 340px) { .banner { --sw: 100px; --sk: .62; } }
     @container (max-width: 260px) { .banner { --sw: 64px; --sk: .5; } }
     /* The mini card's drawing stays whole, clear of the zoom button; under 340 px the text needs the room. */
