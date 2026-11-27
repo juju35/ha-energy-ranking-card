@@ -1,0 +1,7 @@
+{
+  "name": "Energy Ranking Card",
+  "render_readme": true,
+  "content_in_root": false,
+  "filename": "ha-energy-ranking-card.js",
+  "homeassistant": "2024.8.0"
+}
